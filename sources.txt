@@ -1,0 +1,13 @@
+src/benchmark/MicroBenchmark.java
+src/benchmark/ThreadId.java
+src/lists/CoarseList.java
+src/lists/EliminationBackoffList.java
+src/lists/EliminationCombiningList.java
+src/lists/FineList.java
+src/lists/LazyList.java
+src/lists/LockFreeList.java
+src/lists/OptimisticList.java
+src/lists/Set.java
+src/Measurement.java
+src/util/EliminationArray.java
+src/util/LockFreeExchanger.java
