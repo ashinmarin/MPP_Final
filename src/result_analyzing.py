@@ -9,15 +9,6 @@ if __name__ == '__main__':
     ##################################################################
     # global data
     ##################################################################
-    list_names = ['Coarse',
-                  'Fine',
-                  'Lazy',
-                  'LockFree',
-                  'Optimistic',
-                  'EliminationBackoff',
-                  'EliminationCombining'
-                  ]
-
     labels = {
         'Optimistic': 'r^-',
         'Fine': 'bs-',
@@ -42,7 +33,7 @@ if __name__ == '__main__':
         os.makedirs(plot_res_dir)
 
     ##################################################################
-    # symmetric plot
+    # symmetric & asymmetric plot
     ##################################################################
     for directory in [symmetric_res_dir, asymmetric_res_dir]:
         for filename in [name for name in os.listdir(directory) if name.endswith('.txt')]:
@@ -53,7 +44,6 @@ if __name__ == '__main__':
             fig = plt.figure()
             ax = plt.subplot(111)
             for list_name, thread_data in file_data.items():
-                # for list_name, thread_data in data.items():
                 ax.plot(thread_nums, thread_data, labels[list_name], label=list_name+'List')
                 plt.ylabel('Throughput (opt/ms)')
                 # plt.title('threads | contains {}%'.format(contains))

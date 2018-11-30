@@ -98,9 +98,7 @@ if __name__ == '__main__':
         with open(filename, 'w') as outfile:
             outfile.write(json.dumps(case_data, indent=4))
 
-    ##################################################################
-    # thread 20 contains 0
-    ##################################################################
+
 
 
     # make clean

@@ -28,7 +28,7 @@ public class MicroBenchmark extends Thread implements ThreadId {
 		this.warmup = warmup;
 		this.repeat = repeat;
 		this.add_percentage = add_percentage;
-		this.contains_perentage = 100 - this.add_percentage - rm_percentage;
+		this.contains_perentage = 100 - rm_percentage;
 		this.rand = new Random();
 		this.rand_val = 0;
 	}
